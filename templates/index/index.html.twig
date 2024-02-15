@@ -3,10 +3,13 @@
 {% block title %}Hello IndexController!{% endblock %}
 
 {% block body %}
+    <h1>Welcom one the BeamNMods Dashbaord</h1>
+    <p>Wants to add your mod to the website ?</p>
+    <p>First, login with your discord account</p>
     {% if not app.user %}
         <a href="{{ path('auth_discord_start') }}">
             <button type="button">
-                Auth
+                Login with Discord
             </button>
         </a>
     {% else %}
